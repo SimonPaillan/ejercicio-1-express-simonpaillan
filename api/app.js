@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use( express.static('public'));
 
 // Ruta raíz
-app.get('/public', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hola mundo nashe!');
 });
 
