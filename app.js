@@ -10,12 +10,15 @@ app.use( express.static('acerca'));
 // Ruta raíz
 app.get('/', (req, res) => {
   res.send('Hola mundo nashe!');
+  
 });
 app.get('/acerca', (req, res) => {
   res.send('pagina en construccion');
 });
-app.get('/contacto', (req, res) => {
-  res.send('no se debe ver');
+app.post('/contacto', (req, res) => {
+  const { nombre, email } = req.body;
+  res.send(`Nombre: ${nombre}, Email: ${email}`);
+  res.send(`Hola ${nombre}`);
 });
 
 // Middleware básico para manejo de errores

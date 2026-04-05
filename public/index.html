@@ -9,18 +9,11 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="up">
-        <h1>Welcome to My Express App</h1> 
-        <div class="inner">
-            <p>Esta en mi primer pagina web :D.</p>
-            <div class="core">
-                <button id="btn" type="button" >
-                    apretame!
-                </button>
-                <a href="../acerca">ir a acerca</a>
-            </div>
-        </div>
-    </div>
+   <form method="POST" action="/contacto">
+  <input type="text" name="nombre" placeholder="Nombre" />
+  <input type="email" name="email" placeholder="Email" />
+  <button type="submit">Enviar</button>
+</form>
 </body>
 
 </html>
