@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    display:grid
 }
 
 .container {
@@ -52,4 +53,23 @@ p {
       background: orange;
       border-radius: 50%;
       position: absolute;
+}
+
+.up{
+    background-color: aquamarine;
+    border-radius: 10px;
+
+}
+
+.inner{
+    background-color: gray;
+    border-radius: 8px;
+    border-color: #333;
+    margin:5px ;
+}
+
+.core{
+    display: flex;
+    gap: 100px;
+    margin-left: 75px;
 }
